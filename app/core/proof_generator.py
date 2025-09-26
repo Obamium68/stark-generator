@@ -1,12 +1,13 @@
 from eth_hash.auto import keccak
-from polynomial import X, interpolate_poly, Polynomial
-from merkle import MerkleTree
-from field import FieldElement
-from FRI_functions import decommit_fri, commit_fri
+
+from app.core.polynomial import interpolate_poly, Polynomial, X
+from app.core.merkle import MerkleTree
+from app.core.field import FieldElement
+from app.core.fri import decommit_fri, commit_fri
 import json, time
 
 def keccak256(data: bytes) -> str:
-    return keccak(data).hex()
+    return keccak(data  ).hex()
 
 def nhash(data):
     hex_dig = keccak256(data.encode())

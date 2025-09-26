@@ -1,5 +1,5 @@
-from merkle import MerkleTree
-from polynomial import Polynomial
+from app.core.merkle import MerkleTree
+from app.core.polynomial import Polynomial
 
 
 def next_fri_domain(fri_domain):

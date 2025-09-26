@@ -1,7 +1,7 @@
 # Usa Python slim
 FROM python:3.11-slim
 
-WORKDIR /
+WORKDIR /app
 
 # Installa solo librerie esterne
 COPY requirements.txt .
@@ -14,4 +14,4 @@ COPY . .
 EXPOSE 8080
 
 # Avvio Flask
-CMD ["python", "app.py"]
+CMD ["python", "run.py"]

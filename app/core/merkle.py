@@ -24,7 +24,7 @@
 from eth_hash.auto import keccak
 from math import log2, ceil
 
-from field import FieldElement
+from app.core.field import FieldElement
 
 def keccak256(data: bytes) -> str:
     return keccak(data).hex()
